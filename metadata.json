@@ -1,0 +1,6 @@
+{
+  "name": "Burn Ops - Warehouse, Stock & Supply Chain Management",
+  "description": "Comprehensive warehouse operations, serialized & non-serialized inventory tracking, barcode scanning, month-end audit reconciliation, dispatch transfers, and international trade logistics for Burn Clean Cookstoves.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

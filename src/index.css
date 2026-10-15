@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-sans: 'Figtree', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+.safe-area-pb {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+}
+
+@media print {
+  header, nav, .print\:hidden {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
