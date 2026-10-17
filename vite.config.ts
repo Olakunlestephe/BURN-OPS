@@ -5,7 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/BURN-OPS/',
+    // GitHub Pages serves from /BURN-OPS/; Netlify (which sets NETLIFY=true at build time) serves from the root.
+    base: process.env.NETLIFY === 'true' ? '/' : '/BURN-OPS/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
